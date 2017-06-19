@@ -18,7 +18,7 @@
 
 <configuration>
         <property>
-                <name>fs.moriaFS</name>
+                <name>fs.defaultFS</name>
                 <value>hdfs://dit105.lab.it.uc3m.es:9000</value>
                 <description>NameNode URI</description>
         </property>

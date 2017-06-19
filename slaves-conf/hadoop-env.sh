@@ -7,7 +7,7 @@
 # remote nodes.
 
 # The java implementation to use.  Required.
-export JAVA_HOME=/usr/jdk64/jdk1.7.0_67
+export JAVA_HOME=/usr/jdk64/jdk1.8.0_77
 export HADOOP_HOME_WARN_SUPPRESS=1
 
 # Hadoop home directory
@@ -112,8 +112,8 @@ export JAVA_LIBRARY_PATH=${JAVA_LIBRARY_PATH}
 export HADOOP_OPTS="-Dhdp.version=$HDP_VERSION $HADOOP_OPTS"
 
 
-# Fix temporary bug, when ulimit from conf files is not picked up, without full relogin. 
-# Makes sense to fix only when runing DN as root 
-if [ "$command" == "datanode" ] && [ "$EUID" -eq 0 ] && [ -n "$HADOOP_SECURE_DN_USER" ]; then  
+# Fix temporary bug, when ulimit from conf files is not picked up, without full relogin.
+# Makes sense to fix only when runing DN as root
+if [ "$command" == "datanode" ] && [ "$EUID" -eq 0 ] && [ -n "$HADOOP_SECURE_DN_USER" ]; then
   ulimit -n 128000
 fi
