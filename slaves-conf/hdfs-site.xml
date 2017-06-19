@@ -27,7 +27,7 @@
     <description>Default block replication</description>
   </property>
   <property>
-    <name>dfs.namenode.name.dir</name>
-    <value>file:/var/bigdata/hdp/hadoop-home/hdfs/namenode</value> 
+    <name>dfs.datanode.name.dir</name>
+    <value>file:/var/bigdata/hdp/hadoop-home/hdfs/datanode</value>
   </property>
 </configuration>
