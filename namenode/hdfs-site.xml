@@ -16,10 +16,6 @@
 
 <!-- Put site-specific property overrides in this file. -->
 
-#<configuration>
-
-#</configuration>
-
 <configuration>
   <property>
     <name>dfs.replication</name>
@@ -28,6 +24,6 @@
   </property>
   <property>
     <name>dfs.namenode.name.dir</name>
-    <value>file:/var/bigdata/hdp/hadoop-home/hdfs/namenode</value> 
+    <value>file:/var/bigdata/hdp/hadoop-home/hdfs/namenode</value>
   </property>
 </configuration>
